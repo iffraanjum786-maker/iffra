@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS 3D Transforms</title>
+<style>
+  body {
+    perspective: 500px; /* Add perspective for 3D depth */
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background: teal;
+    color: white;
+    line-height: 100px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: transform 0.8s;
+  }
+
+  /* 3D Transform Examples */
+  .rotateX { transform: rotateX(45deg); }
+  .rotateY { transform: rotateY(45deg); }
+  .rotateZ { transform: rotateZ(45deg); }
+  .translateZ { transform: translateZ(50px); }
+  .scaleZ { transform: scaleZ(2); } /* Has effect when used with rotate */
+  .hover-box:hover { transform: rotateY(180deg); }
+</style>
+</head>
+<body>
+
+<h2>CSS 3D Transforms</h2>
+
+<div class="box rotateX">rotateX</div>
+<div class="box rotateY">rotateY</div>
+<div class="box rotateZ">rotateZ</div>
+<div class="box translateZ">translateZ</div>
+<div class="box hover-box">Hover Me</div>
+
+</body>
+</html>

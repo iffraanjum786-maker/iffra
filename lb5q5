@@ -1,0 +1,17 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typography Spacing</title>
+  <style>
+    p {
+      line-height: 1.5;    /* space between lines */
+      letter-spacing: 1px; /* space between letters */
+      word-spacing: 3px;   /* space between words */
+    }
+  </style>
+</head>
+<body>
+  <p>This is a simple example showing spacing in typography.</p>
+</body>
+</html>

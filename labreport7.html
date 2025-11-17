@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS 2D Transforms</title>
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.5s;
+  }
+
+  .translate { transform: translate(30px, 20px); }
+  .rotate { transform: rotate(45deg); }
+  .scale { transform: scale(1.5); }
+  .skew { transform: skew(20deg, 10deg); }
+  .hover-transform:hover { transform: rotate(30deg) scale(1.2); }
+</style>
+</head>
+<body>
+
+<div class="box translate">Translate</div>
+<div class="box rotate">Rotate</div>
+<div class="box scale">Scale</div>
+<div class="box skew">Skew</div>
+<div class="box hover-transform">Hover Me</div>
+
+</body>
+</html>

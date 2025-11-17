@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Animations Example</title>
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background: royalblue;
+    position: relative;
+    animation: moveBox 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveBox {
+    0%   { left: 0; background: royalblue; }
+    50%  { left: 150px; background: tomato; transform: rotate(45deg); }
+    100% { left: 300px; background: gold; transform: rotate(90deg); }
+  }
+</style>
+</head>
+<body>
+
+<h2>CSS Animation Example</h2>
+<div class="box"></div>
+
+</body>
+</html>

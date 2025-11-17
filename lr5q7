@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Descendant Combinator</title>
+  <style>
+    div p {
+      color: blue;  /* all <p> inside <div> */
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>This paragraph is blue (descendant of div).</p>
+    <section>
+      <p>This paragraph is also blue (grandchild of div).</p>
+    </section>
+  </div>
+  <p>This paragraph is NOT blue (not inside div).</p>
+</body>
+</html>
